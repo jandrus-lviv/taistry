@@ -26,7 +26,7 @@
         </div>
     </header>
     <main>
-        <h2 id="shop">Крамничка</h2>
+        <h2 id="shop" class="subhead">Крамничка</h2>
         <div class="product-list">
             <article class="product-card">
                 <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
@@ -83,25 +83,30 @@
         </div>
     </main>
     <section id="form-send-message">
-        <h2>Надіслати повідомлення</h2>
+        <h2 class="subhead">Надіслати повідомлення</h2>
+        <br>
+        <br>
         <form id="send-message" method="POST" action="https://formspree.io/andriy.shevtsiv@gmail.com">
             <label for="name-input">Ваше ім’я:</label>
+            <br>
             <input type="text" id="name-input" placeholder="Ваше ім’я" name="user-name">
             <br>
             <br>
             <label for="email-input">Електронна пошта:</label>
+            <br>
             <input type="email" id="email-input" placeholder="Електронна пошта" name="user-email">
             <br>
             <br>
             <label for="message">Ваше повідомлення:</label>
+            <br>
             <textarea id="message" name="user-message" rows="5" cols="33"></textarea>
             <br>
             <br>
             <input class="button" type="submit" value="Надіслати">
         </form>
-        <button class="button" onclick="window.location.href='#header'">↑ Вгору ↑</button>
-        <hr>
     </section>
+    <button class="button" onclick="window.location.href='#header'">↑ Вгору ↑</button>
+    <hr>
     <footer id="contacts">
         <img id="phone-icon" src="icon/phone.svg" width="15" alt="Телефон">
         <p>+38-(063)-628-68-39</p>
@@ -110,4 +115,5 @@
         <p>© Андрій Шевців</p>
     </footer>
 </body>
+
 </html>

@@ -3,7 +3,6 @@
 :root {
     font-family: arial;
     --main-font-color: black;
-    --secondary-font-color: red;
 }
 
 body {
@@ -11,7 +10,10 @@ body {
     margin: auto;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -76,12 +78,16 @@ header .banner {
 }
 
 header .banner h1 {
-    color: var(--secondary-font-color);
-    background: rgba(255, 255, 255, 0.6);
+    color: var(--main-font-color);
+    background: rgba(255, 255, 255, 0.7); // white
     /* White */
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.subhead {
+    padding: 0.3em;
 }
 
 .product-card {
@@ -149,4 +155,52 @@ header .banner h1 {
 
 .btn-default {
     color: blue;
+}
+
+#form-send-message {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: gainsboro;
+}
+
+#form-send-message h2 {
+    background: red;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin: -16px -16px 16px -16px;
+}
+
+#form-send-message input[type="text"],
+#form-send-message input[type="email"],
+#form-send-message textarea,
+#form-send-message select {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+#form-send-message input[type="text"]:focus,
+#form-send-message input[type="email"]:focus,
+#form-send-message textarea:focus,
+#form-send-message select:focus {
+    box-shadow: 0 0 5px red;
+    padding: 3%;
+    border: 1px solid red;
 }
