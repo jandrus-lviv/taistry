@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
 :root {
     font-family: arial;
     --main-font-color: black;
-    --secondary-font-color: white;
+    --secondary-font-color: red;
 }
 
 body {
@@ -9,12 +11,13 @@ body {
     margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, p {
     margin: 0;
 }
 
 header nav .logo {
-    font-size: 2.5rem;
+    font-family: 'Pangolin', arial;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -34,19 +37,30 @@ header nav .menu li {
 header nav .menu a {
     text-decoration: none;
     color: var(--main-font-color);
+    font-size: 0.9rem;
 }
 
 header nav .menu a:hover {
     text-decoration: underline;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 360px) {
+    header nav .menu a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 660px) {
     header nav {
         display: flex;
     }
-    
+
     header nav .menu {
-        flex: 1;    
+        flex: 1;
+    }
+
+    header nav .menu a {
+        font-size: 1rem;
     }
 }
 
@@ -54,7 +68,7 @@ header .banner {
     background-image: url(../img/taistry-slider.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,8 +77,11 @@ header .banner {
 
 header .banner h1 {
     color: var(--secondary-font-color);
-    font-size: 4.5rem;
-    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    /* White */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .product-card {
@@ -83,11 +100,11 @@ header .banner h1 {
 }
 
 .product-list {
-        display: grid;
-        grid-gap: 5px;
+    display: grid;
+    grid-gap: 5px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
     .product-list {
         grid-template-columns: 1fr 1fr;
     }
@@ -115,11 +132,12 @@ header .banner h1 {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid red;
 }
 
