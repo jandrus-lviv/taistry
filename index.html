@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,13 @@
     <title>Тайстри Любомири | Сумки виткані з любов’ю</title>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
+
 <body>
     <header id="header">
+        <ul class="date-and-time">
+            <li class="calendar"></li>
+            <li class="clock"></li>
+        </ul>
         <nav>
             <p class="logo">Тайстри Любомири</p>
             <ul class="menu">
@@ -108,12 +114,14 @@
     <button class="button" onclick="window.location.href='#header'">↑ Вгору ↑</button>
     <hr>
     <footer id="contacts">
-        <img id="phone-icon" src="icon/phone.svg" width="15" alt="Телефон">
-        <p>+38-(063)-628-68-39</p>
-        <img id="mail-icon" src="icon/mail.svg" width="15" alt="Електронна пошта">
-        <p><a href="mailto:andriy.shevtsiv@gmail.com" target="_blank">andriy.shevtsiv@gmail.com</a></p>
-        <p>© Андрій Шевців</p>
+        <ul class="footer-contacts">
+            <li><img class="icon" id="phone-icon" src="icon/phone.svg" alt="Телефон">+38-(063)-628-68-39</li>
+            <li><img class="icon" id="mail-icon" src="icon/mail.svg" alt="Електронна пошта"><a href="mailto:andriy.shevtsiv@gmail.com" target="_blank">andriy.shevtsiv@gmail.com</a></li>
+            <li>© Андрій Шевців</li>
+        </ul>
+
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

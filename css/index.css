@@ -17,6 +17,23 @@ p {
     margin: 0;
 }
 
+header .date-and-time {
+    display: flex;
+}
+
+header .date-and-time {
+    padding: 0;
+    margin: 0.2rem;
+    justify-content: space-between;
+}
+
+header .date-and-time li {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-size: 0.9rem;
+}
+
 header nav .logo {
     font-family: 'Pangolin', arial;
     font-size: 2.2rem;
@@ -203,4 +220,32 @@ header .banner h1 {
     box-shadow: 0 0 5px red;
     padding: 3%;
     border: 1px solid red;
+}
+
+.footer-contacts {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.footer-contacts {
+    padding: 0;
+    justify-content: space-around;
+}
+
+.footer-contacts li {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-size: 1rem;
+}
+
+.footer-contacts li .icon {
+    width: 1rem;
+    padding-right: 0.3rem;
+}
+
+@media (min-width: 660px) {
+    .footer-contacts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
