@@ -17,26 +17,9 @@ p {
     margin: 0;
 }
 
-header .date-and-time {
-    display: flex;
-}
-
-header .date-and-time {
-    padding: 0;
-    margin: 0.2rem;
-    justify-content: space-between;
-}
-
-header .date-and-time li {
-    list-style-type: none;
-    text-decoration: none;
-    color: var(--main-font-color);
-    font-size: 0.9rem;
-}
-
 header nav .logo {
     font-family: 'Pangolin', arial;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -132,13 +115,13 @@ header .banner h1 {
     }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 770px) {
     .product-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 990px) {
     .product-list {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -240,7 +223,7 @@ header .banner h1 {
     padding-right: 0.3rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 770px) {
     .footer-contacts {
         grid-template-columns: 1fr 1fr 1fr;
     }

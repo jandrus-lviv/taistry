@@ -11,178 +11,131 @@
 </head>
 
 <body>
-    
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Тайстри Любомири</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <header id="header" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
+            <a class="navbar-brand logo" href="#">Тайстри Любомири</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#header">Головна <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#shop">Крамничка</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smooth" href="#form-send-message">Повідомлення</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smooth" href="#contacts">Контакти</a>
-                        </li>
-                    </ul>
-                    <a href="#"><i class="fas fa-luggage-cart fa-spin"></i> Кошик</a>
-                </div>
-            </nav>
-    </div>
-    
-    <header id="header">
-        <ul class="date-and-time">
-            <li class="calendar"></li>
-            <li class="clock"></li>
-        </ul>
-        <nav>
-            <p class="logo">Тайстри Любомири</p>
-            <ul class="menu">
-                <li><a href="#header">Головна</a></li>
-                <li><a href="#shop">Крамничка</a></li>
-                <li><a href="#form-send-message">Повідомлення</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header">Головна <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">Крамничка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#form-send-message">Повідомлення</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+                <p class="clock"></p>
+            </div>
         </nav>
         <div class="banner">
             <h1>Сумки виткані з любов’ю</h1>
             <div class="button-container">
-                <button class="button" onclick="window.location.href='#shop'">Гайда на закупи!</button>
+                <a class="button btn" href="#shop">Гайда на закупи!</a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="container">
         <h2 id="shop" class="subhead">Крамничка</h2>
         <div class="product-list">
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
-                <p>₴ 99,99</p>
+                <img src="/img/bag-black-grey.jpg" alt="Торбинка-гаманець">
+                <h3>Сумка чорно-сіра</h3>
+                <p>₴ 999,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
-                <p>₴ 99,99</p>
+                <img src="/img/bag-pink-yellov.jpg" alt="Торбинка-гаманець">
+                <h3>Сумка рожево-жовта</h3>
+                <p>₴ 799,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
-                <p>₴ 99,99</p>
+                <img src="/img/bag-red-black-green.jpg" alt="Торбинка-гаманець">
+                <h3>Сумка червоно-чорно-зелена</h3>
+                <p>₴ 899,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
+                <img src="/img/valet-blue-yellov.jpg" alt="Торбинка-гаманець">
+                <h3>Гаманець синьо-жовтий</h3>
                 <p>₴ 99,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
+                <img src="/img/valet-red-black-white.jpg" alt="Торбинка-гаманець">
+                <h3>Гаманець червоно-чорно-білий</h3>
                 <p>₴ 99,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
+                <img src="/img/valet-red-black.jpg" alt="Торбинка-гаманець">
+                <h3>Гаманець червоно-чорний</h3>
                 <p>₴ 99,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
+                <img src="/img/valet-red-yellov-blue-green.jpg" alt="Торбинка-гаманець">
+                <h3>Гаманець червоно-жовто-синій</h3>
                 <p>₴ 99,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
             <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
+                <img src="/img/valet-red-yellov-white-green.jpg" alt="Торбинка-гаманець">
+                <h3>Гаманець червоно-жовто-зелений</h3>
                 <p>₴ 99,99</p>
                 <div class="button-container">
-                    <button class="button">
+                    <button class="button btn">
                         Інфо
                     </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
-                </div>
-            </article>
-            <article class="product-card">
-                <img src="img/taistra-product.jpg" alt="Торбинка-гаманець">
-                <h3>Торбинка-гаманець</h3>
-                <p>₴ 99,99</p>
-                <div class="button-container">
-                    <button class="button">
-                        Інфо
-                    </button>
-                    <button class="button" onclick="window.location.href='#form-send-message'">
-                        Купити
-                    </button>
+                    <a class="button btn" href="#form-send-message">Купити</a>
                 </div>
             </article>
         </div>
     </main>
-    <section id="form-send-message">
+    <section id="form-send-message" class="container">
         <h2 class="subhead">Надіслати повідомлення</h2>
         <br>
         <br>
@@ -202,12 +155,12 @@
             <textarea id="message" name="user-message" rows="5" cols="33"></textarea>
             <br>
             <br>
-            <input class="button" type="submit" value="Надіслати">
+            <input class="button btn" type="submit" value="Надіслати">
         </form>
     </section>
-    <button class="button" onclick="window.location.href='#header'">↑ Вгору ↑</button>
+    <a class="button btn" href="#header">↑ Вгору ↑</a>
     <hr>
-    <footer id="contacts">
+    <footer id="contacts" class="container">
         <ul class="footer-contacts">
             <li><img class="icon" id="phone-icon" src="icon/phone.svg" alt="Телефон">+38-(063)-628-68-39</li>
             <li><img class="icon" id="mail-icon" src="icon/mail.svg" alt="Електронна пошта"><a href="mailto:andriy.shevtsiv@gmail.com" target="_blank">andriy.shevtsiv@gmail.com</a></li>
@@ -215,9 +168,7 @@
         </ul>
 
     </footer>
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/smooth-scroll.js"></script>
