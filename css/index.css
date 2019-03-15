@@ -79,7 +79,8 @@ header .banner {
 
 header .banner h1 {
     color: var(--main-font-color);
-    background: rgba(255, 255, 255, 0.7); /* white */
+    background: rgba(255, 255, 255, 0.7);
+    /* white */
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
@@ -149,10 +150,6 @@ header .banner h1 {
 }
 
 
-.btn-default {
-    color: blue;
-}
-
 #form-send-message {
     font: 95% Arial, Helvetica, sans-serif;
     max-width: 400px;
@@ -208,7 +205,7 @@ header .banner h1 {
 
 .footer-contacts {
     padding: 0;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .footer-contacts li {
@@ -225,6 +222,7 @@ header .banner h1 {
 
 @media (min-width: 770px) {
     .footer-contacts {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
     }
 }
